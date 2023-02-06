@@ -6,7 +6,13 @@ const Deposit = styled.div<{percent: number}>`
           color: ${(props) => props.percent >= 0 ? "green" : "red"};
           margin: 10px;
           padding: 10px;
-        `;
+        `
+
+const Bar = styled.div<{color: string, width: number, height: number}>`
+    border: 1px solid ${(props) => props.color};
+    width: ${(props) => props.width}px;
+    height: ${(props) => props.height}px;
+`
 
 const Graph = styled.div`
     display: flex;
@@ -15,7 +21,7 @@ const Graph = styled.div`
     align-items: flex-end;
     border: 2px solid white;
   padding: 2px;
-`;
+`
 
 const ControlsButton = styled.button`
   background-color: white;
@@ -31,7 +37,7 @@ const ControlsButton = styled.button`
   @media screen and (max-width: 500px) {
     max-width: 300px;
   }
-`;
+`
 
 const ControlsWrapper = styled.section`
   display: flex;
@@ -43,35 +49,35 @@ const ControlsWrapper = styled.section`
   @media screen and (max-width: 500px) {
     flex-direction: column;
   }
-`;
+`
 
 function RandomTest() {
     const [percent, setPercent] = useState(0)
     const [deposit, setDeposit] = useState(1000)
-    const [maxDeposit, setMaxDeposit] = useState (0)
+    const [maxDeposit, setMaxDeposit] = useState (1000)
     const [graph, setGraph] = useState<number[]>([])
 
     const randomHandler = useCallback(() => {
-        const minusOrPlus = Math.floor(Math.random() * 2)
-        const result = Math.floor(Math.random() * 50)
+            const minusOrPlus = Math.floor(Math.random() * 2)
+            const result = Math.floor(Math.random() * 50)
+            const resultDiposit = Math.floor(deposit + deposit * (percent / 100))
 
+            if (resultDiposit > maxDeposit) {
+                setMaxDeposit(resultDiposit)
+            }
 
-        const resultDiposit = Math.floor(deposit + deposit * (percent / 100))
-        if (resultDiposit > maxDeposit) {
-            setMaxDeposit(resultDiposit)
-        }
+            if (resultDiposit > 0) {
+                setDeposit(resultDiposit)
+                setPercent(minusOrPlus ? result : -result)
+                if (graph.length > 50) {
+                    graph.shift()
+                }
+                graph.push(deposit)
+                setGraph(graph)
+            }
 
-        if (resultDiposit > 1) {
-            setDeposit(resultDiposit)
-            setPercent( minusOrPlus ? result : -result)
-        }
-        
-    },[deposit, maxDeposit, percent])
-
-    useEffect(() => {
-        graph.push(deposit)
-        setGraph(graph)
-    }, [deposit])
+        },
+        [deposit, graph, maxDeposit, percent])
 
     return (
         <Fragment>
@@ -84,8 +90,10 @@ function RandomTest() {
                 {
                     graph.map((el, index) => {
                     if (el !== 0) {
-                        const color = graph[index - 1] < el ? 'green' : 'red';
-                        return <div style={{width:`${300/graph.length}px`, height:`${(el/maxDeposit) * 300}px`, border: `1px solid ${color}`}}></div>
+                        let color = graph[index - 1] < el ? 'green' : 'red'
+                        let width = 300/graph.length
+                        let height = (el/maxDeposit) * 300
+                        return <Bar height={height} width={width} color = {color}></Bar>
                     } else return null
                 })}
             </Graph>
