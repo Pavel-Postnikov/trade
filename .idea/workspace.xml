@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8772aa24-3fd7-4c2f-97e8-5ef0450118aa" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Menu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RandomTest/RandomTestStyled.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RandomTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomTest.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RandomTest.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomTest/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,17 +39,22 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Павел/Documents/GitHub/trade",
+    "last_opened_file_path": "C:/Users/Pavel/Documents/GitHub/trade",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "node",
     "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "C:\\Users\\Павел\\Documents\\GitHub\\trade\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Users\\Pavel\\Documents\\GitHub\\trade\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pavel\Documents\GitHub\trade\src\RandomTest" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.npm start">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
@@ -77,6 +84,7 @@
       <workItem from="1675507936266" duration="19341000" />
       <workItem from="1675569562659" duration="199000" />
       <workItem from="1675570234971" duration="4774000" />
+      <workItem from="1675712965743" duration="3013000" />
     </task>
     <servers />
   </component>
