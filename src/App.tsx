@@ -1,18 +1,25 @@
-import React from 'react';
-import './App.css';
 import RandomTest from './RandomTest'
-import Menu from './Menu'
+import Menu from './Components/Menu'
+import {Route, Routes} from "react-router-dom";
+import Error404 from "./Erorr404";
+import Home from "./Home";
+import Exchange from "./Exchange";
 
 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Menu/>
-        <RandomTest/>
-      </header>
-    </div>
+      <>
+        <Menu />
+        <Routes>
+            <Route path={'/'} element={<RandomTest/>}/>
+            <Route path={'/home'} element={<Home/>}/>
+            <Route path={'/randomgame'} element={<RandomTest/>}/>
+            <Route path={'/exchange'} element={<Exchange/>}/>
+            <Route path={'*'} element={<Error404/>}/>
+
+        </Routes>
+      </>
   );
 }
 

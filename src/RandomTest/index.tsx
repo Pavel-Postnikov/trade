@@ -1,5 +1,5 @@
 import React, {Fragment, useCallback, useRef, useState} from 'react'
-import {Bar, ControlsButton, ControlsWrapper, Deposit, Graph} from "./RandomTestStyled";
+import {Bar, Content, ControlsButton, ControlsWrapper, Deposit, Graph} from "./RandomTest.Styled";
 
 function RandomTest() {
     const [percent, setPercent] = useState(0)
@@ -36,15 +36,14 @@ function RandomTest() {
         [deposit, graph])
 
     return (
-        <Fragment>
+        <Content>
         <div>{deposit} руб.</div>
         <Deposit percent={percent}>{percent}%</Deposit>
         <ControlsWrapper>
             <ControlsButton onClick={randomHandler}>Попытать счастье!</ControlsButton>
         </ControlsWrapper>
             <Graph>
-                {
-                    graph.map((el, index) => {
+                {   graph.map((el, index) => {
                     if (el !== 0) {
                         let color = graph[index - 1] < el ? 'green' : 'red'
                         let width = 300/graph.length
@@ -53,7 +52,7 @@ function RandomTest() {
                     } else return null
                 })}
             </Graph>
-        </Fragment>
+        </Content>
     )
 }
 

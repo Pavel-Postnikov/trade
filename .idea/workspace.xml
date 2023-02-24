@@ -5,16 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8772aa24-3fd7-4c2f-97e8-5ef0450118aa" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/error-page.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/Menu/Menu.Styled.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Erorr404/Erorr404.Styled.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exchange/Exchange.Styled.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Exchange/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Home/Home.Styled.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Home/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Slices/counter/counter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Slices/counter/counterSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Menu/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RandomTest/RandomTestStyled.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomTest/RandomTest.Styled.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RandomTest/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/RandomTest/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/error-page.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Erorr404/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +34,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="JavaScript File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -58,7 +68,14 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Pavel\Documents\GitHub\trade\src" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pavel\Documents\GitHub\trade\src\Home" />
+      <recent name="C:\Users\Pavel\Documents\GitHub\trade\src\Components\Menu" />
+      <recent name="C:\Users\Pavel\Documents\GitHub\trade\src\Erorr404" />
+      <recent name="C:\Users\Pavel\Documents\GitHub\trade\src\Components" />
       <recent name="C:\Users\Pavel\Documents\GitHub\trade\src\RandomTest" />
     </key>
   </component>
@@ -91,7 +108,14 @@
       <workItem from="1675507936266" duration="19341000" />
       <workItem from="1675569562659" duration="199000" />
       <workItem from="1675570234971" duration="4774000" />
-      <workItem from="1675712965743" duration="5557000" />
+      <workItem from="1675712965743" duration="6150000" />
+      <workItem from="1675934160681" duration="4463000" />
+      <workItem from="1675938686868" duration="3051000" />
+      <workItem from="1675947409938" duration="690000" />
+      <workItem from="1675976098929" duration="3547000" />
+      <workItem from="1676057515262" duration="2309000" />
+      <workItem from="1676542761447" duration="60000" />
+      <workItem from="1676633244300" duration="648000" />
     </task>
     <servers />
   </component>
